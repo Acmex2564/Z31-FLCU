@@ -18,7 +18,7 @@ Hitachi HA1813P Analog Voltage Comparator
 Hitachi D789 NPN transistor
 Second Zener diode limiting the voltage from the cluster on the fuel-level sub-gauge sense circuit
 
-In general terms, as far as I can make out this little box lowers the effective resistance for the fuel-level sub-gauge circuit based upon the input from the sending unit on the main gauge sender. I don't know much about digital electronics, and less about linear/analog ones, but it appears that the main level signal is left alone, and left more inaccurate, and the driver should rely on the digital "Fuel Volume remaining" readout on the dash.
+The actual function of this part is incredibly simple: at a main level reading of less than 3.6V (that is, more than approximately 1/4 tank) the sub level signal line is grounded, causing the cluster to disable the display. That's it.
 
 Datasheets for the two Hitachi parts are located in the repository, because the datasheet for HA1813PS is difficult to find and I had already saved the other. 
 Also found are images of the part in question, and it's wiring harness.
